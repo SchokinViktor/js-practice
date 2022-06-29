@@ -1,0 +1,148 @@
+.latest-news {
+    background: linear-gradient(237.1deg, #24CCFA 11.16%, #3C7FD4 89.18%);
+    background-size: cover;
+    padding-top: 120px;
+}
+
+.container {
+    background-image: url("../img/background_city.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.column-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.column-item {
+    max-width: 370px;
+    background-color: #FFFFFF;
+    background-size: cover;
+    margin: 0 15px 170px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 514px;
+
+    @include media ('>=768px')  {
+        max-height: 555px;
+        margin: 0 7px 170px 7px;
+    }
+
+    @include media ('>=1024px')  {
+        max-height: 555px;
+        margin: 0 15px 170px 15px;
+    }
+}
+
+.line {
+    border: 1px solid #FFFFFF;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.latest-news-title {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    padding-top: 30px;
+    font-size: 34px;
+    line-height: 44px;
+    margin-bottom: 90px;
+    color: #FFFFFF;
+    font-style: normal;
+    text-align: center;
+
+    @include media ('>=768px')  {
+        font-size: 44px;
+        line-height: 54px;
+    }
+}
+
+.img-holder {
+    padding-bottom: 15px;
+}
+
+.column-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #2C4058;
+    padding: 15px 10px;
+    max-height: 90px;
+
+    @include media ('>=768px')  {
+        font-size: 22px;
+        line-height: 22px;
+        max-height: 110px;
+    }
+
+    @include media ('>=1024px')  {
+        font-size: 20px;
+        line-height: 27px;
+    }
+}
+
+.text-holder {
+    padding: 15px 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2C4058;
+    max-height: 90px;
+
+    @include media ('>=768px')  {
+        font-size: 18px;
+        line-height: 20px;
+        max-height: 100px;
+    }
+
+    @include media ('>=1024px')  {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+.info-holder {
+    padding: 15px 10px;
+    display: flex;
+    left: 10px;
+
+    @include media ('>=768px')  {
+        padding: 30px 10px;
+        max-height: 110px;
+    }
+}
+
+.info-img {
+    border-radius: 50%;
+}
+
+.name {
+    text-transform: uppercase;
+    padding: 3px 20px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2C4058;
+
+    @include media ('>=768px')  {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+.data {
+    color: #55B7FF;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 3px 20px;
+}
+

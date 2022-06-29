@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Open-sans', sans-serif;
+    font-size: 18px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    margin-bottom: 140px;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subtitle {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero__arrow-link-holder {
+    position: relative;
+    display: inline-flex;
+    border-radius: 100%;
+    border: 1px #fff solid;
+    padding: 19px;
+    transition: all 0.1s ease-in;
+
+    &:hover {
+        background-color: #fff;
+    }
+
+    &:hover i {
+        color: #7E5AFF;
+    }
+}
+
+.icon-absolute {
+    position: absolute;
+    top: 50;
+    left: 50;
+    transform: translate(-50%, -50%);
+
+    color: #fff;
+    font-size: 18px;
+}
+
+.circle-header {
+    content: "";
+    display: inline-block;
+    border: 1px #fff solid;
+    padding: 4px;
+    border-radius: 100%;
+}

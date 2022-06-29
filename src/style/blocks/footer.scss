@@ -1,0 +1,101 @@
+.footer {
+    background-image: url('../img/anna/footer-background.jpg');
+    background-size: cover;
+    height: 445px;
+
+    @include media ('>=768px') {
+        height: 330px;
+    }
+
+    @include media ('>=1024px') {
+        height: 549px;
+    }
+
+    p {
+        color: $white;
+    }
+
+    .footer-container {
+        padding-top: 235px;
+        width: 100%;
+
+        @include media ('>=768px') {
+            margin: 0 auto;
+            padding-top: 85px;
+            height: 330px;
+            width: 650px;
+        }
+    
+        @include media ('>=1024px') {
+            padding-top: 204px;
+            height: 549px;
+            width: 770px;
+        }
+    }    
+}
+
+.upper-line {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 41px;
+    align-items: center;
+
+    @include media ('>=768px') {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .logo-holder {
+        margin-bottom: 35px;
+
+        @include media ('>=768px') {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.footer-icon-holder {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.circle {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.footer-icon-link {
+    text-decoration: none;
+    color: $white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.footer-icon-link:hover {
+    color: $grey;
+}
+
+.lower-line {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    @include media ('>=768px') {
+        text-align: left;
+    }
+}

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Fonts and icons -->
+    <link rel="stylesheet" href="./src/css/icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+
+    <!-- Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap" async></script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Slick -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="src/plugins/slick-1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="src/plugins/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="src/plugins/slick-1.8.1/slick/slick-theme.css"/>
+    <!-- Main js and main css -->
+    <link rel="stylesheet" href="src/css/main.css">
+    
+    <script src="src/js/script.js" async></script>
+    <title>Js Practice</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+           <div class="logo-holder">
+                <a href="#" class="logo-link">
+                    <img class="logo" src="src/img/viktor/logo.png" alt="logo">
+                </a>
+           </div>
+           <div class="nav-holder js-nav-holder">
+                <nav class="header-nav">
+                    <ul class="header-nav-list">
+                        <li class="header-nav-item">
+                            <a href="#" class="header-nav-link header-nav-link-active">About us</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#" class="header-nav-link">Projects</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#" class="header-nav-link">News</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#" class="header-nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <ul class="header-media-list">
+                    <li class="header-media-item ">
+                        <a href="#" class="header-media-link ">
+                            <i class="icon-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="header-media-item">
+                        <a href="#" class="header-media-link">
+                            <i class="icon-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="header-media-item">
+                        <a href="#" class="header-media-link">
+                            <i class="icon-instagram"></i>
+                        </a>
+                    </li>
+    
+                </ul>
+           </div>
+           <button class="nav-opener js-nav-opener"><span></span></button>
+           
+        </div>
+    </header>
+    <main class="main">
+        <section class="section__hero">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    
+                </div>
+                <div class="swiper-pagination"></div>
+                
+            </div>
+            <div class="hero__arrow"><a class="hero__arrow-link hero__arrow-link-holder" href="#"><i class="icon-down icon-absolute"></i></a></div>
+        </section>
+
+        <!-- Stanislav -->
+        <section class="whatWeDo">
+            <div class="container-new">
+                <div class="hero-title">
+                    <hr class="line">
+                    <h2 class="title">WHAT WE DO</h2>
+                </div>
+                <div class="clon clon1">
+                    <div class="img-holder img-holder-left">
+                        <img src="src/img/stanislav/trade.jpg" alt="#">
+                    </div>
+                    <div class="info-holder">
+                        <strong class="false-title">ONE WORLD</strong>
+                        <h3 class="info-title">TRADE CENTER</h3>
+                        <p class="info-item">Increasing prosperity in our lives can be accomplished
+                            by having the right frame of mind. The truth is, our
+                            thoughts are very powerful.</p>
+                        <button class="btn">MORE DETAILS</button>
+                        <span class="location"><strong class="marker"></strong>New York City, United States - 1776 feet </span>
+                    </div>
+                </div>
+                <div class="clon clon2">
+                    <div class="img-holder">
+                        <div class="img-holder img-holder-right">
+                            <img src="src/img/stanislav/comerce.jpg" alt="#">
+                        </div>
+                    </div>
+                    <div class="info-holder">
+                        <strong class="false-title">INTERNATIONAL</strong>
+                        <h3 class="info-title">COMMERCE CENTRE</h3>
+                        <p class="info-item">Successful businesses have many things in common,
+                            today we’ll look at the big ‘R’ of recognition and
+                            how a digital advertising network may help.</p>
+                        <button class="btn">MORE DETAILS</button>
+                        <span class="location"><strong class="marker"></strong> Hong Kong - 1588 feet</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sergii -->
+        <section class="latest-news">
+            <div class="container">
+                <div class="line"></div>
+                <h2 class="latest-news-title">latest news</h2>
+                <ul class="column-list">
+                    <li class="column-item">
+                        <div class="img-holder">
+                            <img class="col-img" src="src/img/sergii/column_1.jpeg" alt="image description">
+                        </div>
+                        <h3 class="column-title">see the unmatched beauty of the great.</h3>
+                        <div class="text-holder">
+                            <p>Free directories: directories are perfect for customers that are searching for...</p>
+                        </div>
+                        <div class="info-holder">
+                            <div class="info">
+                                <img class="info-img" src="src/img/sergii/profile_1.jpeg" alt="profile image">
+                            </div>
+                            <div class="info">
+                                <p class="name">alja brun</p>
+                                <p class="data">20 Jan 2020</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="column-item">
+                        <div class="img-holder">
+                            <img class="col-img" src="src/img/sergii/column_2.jpeg" alt="image description">
+                        </div>
+                        <h3 class="column-title">effective advertising pointers.</h3>
+                        <div class="text-holder">
+                            <p>Having a home based business is a wonderful asset to your life...</p>
+                        </div>
+                        <div class="info-holder">
+                            <div class="info">
+                                <img class="info-img" src="src/img/sergii/profile_2.jpeg" alt="profile image">
+                            </div>
+                            <div class="info">
+                                <p class="name">dominic freeman</p>
+                                <p class="data">13 Dec 2019</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="column-item">
+                        <div class="img-holder">
+                            <img class="col-img" src="src/img/sergii/column_3.jpeg" alt="image description">
+                        </div>
+                        <h3 class="column-title">hypnotize yourself into the ghost.</h3>
+                        <div class="text-holder">
+                            <p>There are many things that are important to catalog design...</p>
+                        </div>
+                        <div class="info-holder">
+                            <div class="info">
+                                <img class="info-img" src="src/img/sergii/profile_3.jpeg" alt="profile image">
+                            </div>
+                            <div class="info">
+                                <p class="name">alice ward</p>
+                                <p class="data">30 Nov 2019</p>
+                            </div>
+                        </div>
+                    </li>
+                     <!-- next sliders -->
+                     <li class="column-item">
+                        <div class="img-holder">
+                            <img class="col-img" src="src/img/sergii/column_1.jpeg" alt="image description">
+                        </div>
+                        <h3 class="column-title">see the unmatched beauty of the great.</h3>
+                        <div class="text-holder">
+                            <p>Free directories: directories are perfect for customers that are searching for...</p>
+                        </div>
+                        <div class="info-holder">
+                            <div class="info">
+                                <img class="info-img" src="src/img/sergii/profile_1.jpeg" alt="profile image">
+                            </div>
+                            <div class="info">
+                                <p class="name">alja brun</p>
+                                <p class="data">20 Jan 2020</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="column-item">
+                        <div class="img-holder">
+                            <img class="col-img" src="src/img/sergii/column_2.jpeg" alt="image description">
+                        </div>
+                        <h3 class="column-title">effective advertising pointers.</h3>
+                        <div class="text-holder">
+                            <p>Having a home based business is a wonderful asset to your life...</p>
+                        </div>
+                        <div class="info-holder">
+                            <div class="info">
+                                <img class="info-img" src="src/img/sergii/profile_2.jpeg" alt="profile image">
+                            </div>
+                            <div class="info">
+                                <p class="name">dominic freeman</p>
+                                <p class="data">13 Dec 2019</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="column-item">
+                        <div class="img-holder">
+                            <img class="col-img" src="src/img/sergii/column_3.jpeg" alt="image description">
+                        </div>
+                        <h3 class="column-title">hypnotize yourself into the ghost.</h3>
+                        <div class="text-holder">
+                            <p>There are many things that are important to catalog design...</p>
+                        </div>
+                        <div class="info-holder">
+                            <div class="info">
+                                <img class="info-img" src="src/img/sergii/profile_3.jpeg" alt="profile image">
+                            </div>
+                            <div class="info">
+                                <p class="name">alice ward</p>
+                                <p class="data">30 Nov 2019</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Stanislav -->
+        <section class="gallery">
+            <div class="container">
+                <div class="hero-title">
+                    <hr class="line">
+                    <h2 class="title">gallery</h2>
+                </div>
+                <div class="gallery-holder">
+                    <div class="img-holder main" id="main">
+                        <img src="src/img/stanislav/galery1.jpg" alt="" class="main-img">
+                    </div>
+                    <div class="block-img">
+                        <div class="up-line">
+                            <div class="image-holder">
+                                <img src="src/img/stanislav/galery2.jpg" alt="#" class="img img-left">
+                            </div>
+                            <div class="image-holder">
+                                <img src="src/img/stanislav/galery3.jpg" alt="#" class="img img-right">
+                            </div>
+                        </div>
+                        <div class="down-line">
+                            <div class="image-holder">
+                                <img src="src/img/stanislav/galery4.jpg" alt="#" class="img img-left">
+                            </div>
+                            <div class="image-holder">
+                                <img src="src/img/stanislav/galery5.jpg" alt="#" class="img img-right">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-holder">
+                    <button class="btn">see more</button>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- Annna -->
+        <section class="contacts">
+
+            <div class="contact-form">
+                <form>
+
+                    <div class="form-line"></div>
+                    
+                    <div class="form-title-holder">
+                        <h2>GET IN TOUCH</h2>
+                    </div>
+
+                    <div class="form-columns-holder">
+
+                        <ul class="form-column left">
+                            <li><address><i class="icon-marker"></i>91 Nolan Extensions Suite 670</address></li>
+                            <li><a href="tel:+001 356-868-2454"><i class="icon-phone"></i>+001 356-868-2454</a></li>
+                            <li><a href="mailto:montichello@service.com"><i class="icon-inbox"></i>montichello@service.com</a></li>
+                            <li><p><i class="icon-clock"></i>From 07:05AM to 19:30PM</p></li>
+                        </ul>
+
+                        <ul class="form-column right">
+                            <li><input type="text" class="input-name" placeholder="Full name"></li>
+                            <li><input type="email" class="input-email" placeholder="Email"></li>
+                            <li><button class="btn">SUBMIT</button></li>
+                        </ul>
+
+                    </div>
+
+                </form>
+            </div>
+
+            <div id="map" class="map"></div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="upper-line">
+
+                <div class="logo-holder">
+                    <a href="#" class="logo-link"><img src="src/img/anna/logo.svg" alt="Montichello logo" class="logo"></a>
+                </div>
+    
+                <div class="footer-icon-holder">
+    
+                    <div class="circle"><a href="#" class="footer-icon-link"><i class="icon-facebook"></i></a></div>
+                    <div class="circle"><a href="#" class="footer-icon-link"><i class="icon-twitter"></i></a></div>
+                    <div class="circle"><a href="#" class="footer-icon-link"><i class="icon-instagram"></i></a></div>
+                    
+                </div>
+    
+            </div>
+    
+            <div class="lower-line">
+                <p>Copyrights &copy; 2020 Montichello</p>
+            </div>
+
+        </div>
+
+    </footer>
+    </main>
+</body>
+</html>
