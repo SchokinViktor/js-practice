@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- Jqery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
     <!-- Fonts and icons -->
     <link rel="stylesheet" href="./src/css/icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
-    
+    <!-- Fancybox -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
     <!-- Map -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap" async></script>
@@ -20,15 +24,13 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- Slick -->
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="src/plugins/slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="src/plugins/slick-1.8.1/slick/slick.min.js" defer></script>
     <link rel="stylesheet" type="text/css" href="src/plugins/slick-1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="src/plugins/slick-1.8.1/slick/slick-theme.css"/>
     <!-- Main js and main css -->
     <link rel="stylesheet" href="src/css/main.css">
-    
-    <script src="src/js/script.js" async></script>
+    <script src="src/js/script.js" defer></script>
+
     <title>Js Practice</title>
 </head>
 <body>
@@ -89,11 +91,11 @@
                 <div class="swiper-pagination"></div>
                 
             </div>
-            <div class="hero__arrow"><a class="hero__arrow-link hero__arrow-link-holder" href="#"><i class="icon-down icon-absolute"></i></a></div>
+            <div class="hero__arrow"><a class="hero__arrow-link hero__arrow-link-holder" href="#scroll-dest"><i class="icon-down icon-absolute"></i></a></div>
         </section>
 
         <!-- Stanislav -->
-        <section class="whatWeDo">
+        <section class="whatWeDo" id="scroll-dest">
             <div class="container-new">
                 <div class="hero-title">
                     <hr class="line">
@@ -146,7 +148,7 @@
                         <div class="text-holder">
                             <p>Free directories: directories are perfect for customers that are searching for...</p>
                         </div>
-                        <div class="info-holder">
+                        <div class="info-holder-news">
                             <div class="info">
                                 <img class="info-img" src="src/img/sergii/profile_1.jpeg" alt="profile image">
                             </div>
@@ -164,7 +166,7 @@
                         <div class="text-holder">
                             <p>Having a home based business is a wonderful asset to your life...</p>
                         </div>
-                        <div class="info-holder">
+                        <div class="info-holder-news">
                             <div class="info">
                                 <img class="info-img" src="src/img/sergii/profile_2.jpeg" alt="profile image">
                             </div>
@@ -175,14 +177,14 @@
                         </div>
                     </li>
                     <li class="column-item">
-                        <div class="img-holder">
+                        <div class="info-holder">
                             <img class="col-img" src="src/img/sergii/column_3.jpeg" alt="image description">
                         </div>
                         <h3 class="column-title">hypnotize yourself into the ghost.</h3>
                         <div class="text-holder">
                             <p>There are many things that are important to catalog design...</p>
                         </div>
-                        <div class="info-holder">
+                        <div class="info-holder-news">
                             <div class="info">
                                 <img class="info-img" src="src/img/sergii/profile_3.jpeg" alt="profile image">
                             </div>
@@ -201,7 +203,7 @@
                         <div class="text-holder">
                             <p>Free directories: directories are perfect for customers that are searching for...</p>
                         </div>
-                        <div class="info-holder">
+                        <div class="info-holder-news">
                             <div class="info">
                                 <img class="info-img" src="src/img/sergii/profile_1.jpeg" alt="profile image">
                             </div>
@@ -219,7 +221,7 @@
                         <div class="text-holder">
                             <p>Having a home based business is a wonderful asset to your life...</p>
                         </div>
-                        <div class="info-holder">
+                        <div class="info-holder-news">
                             <div class="info">
                                 <img class="info-img" src="src/img/sergii/profile_2.jpeg" alt="profile image">
                             </div>
@@ -237,7 +239,7 @@
                         <div class="text-holder">
                             <p>There are many things that are important to catalog design...</p>
                         </div>
-                        <div class="info-holder">
+                        <div class="info-holder-news">
                             <div class="info">
                                 <img class="info-img" src="src/img/sergii/profile_3.jpeg" alt="profile image">
                             </div>

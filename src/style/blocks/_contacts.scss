@@ -82,9 +82,11 @@ form {
     .form-column {
         list-style: none;
         padding-inline-start: 0;
+        text-align: center;
 
         @include media ('>=768px') {
             width: 50%;
+            text-align: left;   
         }
     }
 

@@ -305,26 +305,26 @@ $('.column-list').slick({
   let build = document.getElementById('main');
   let buildings = [
     {
-        image: '../img/stanislav/galery1.jpg',
+        image: 'src/img/stanislav/galery1.jpg',
     },
     {
-        image: '../img/stanislav/galery2.jpg',
+        image: 'src/img/stanislav/galery2.jpg',
     },
     {
-        image: '../img/stanislav/galery3.jpg',
+        image: 'src/img/stanislav/galery3.jpg',
     },
     {
-        image: '../img/stanislav/galery4.jpg',
+        image: 'src/img/stanislav/galery4.jpg',
     },
     {
-        image: '../img/stanislav/galery5.jpg',
+        image: 'src/img/stanislav/galery5.jpg',
     },
 ];
 
 for (let i = 0; i < buildings.length; i++ ) {
     const block = `
         <a href="${buildings[i].image}" data-fancybox="gallery startIndex=2">
-            <img class="zoom" src="src/img/zoom.svg" alt="zoom">
+            <img class="zoom" src="src/img/stanislav/zoom.svg" alt="zoom">
         </a>
     `;
     build.insertAdjacentHTML("beforeend", block);
