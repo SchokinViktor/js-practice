@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Jqery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
     <!-- Fonts and icons -->
     <link rel="stylesheet" href="./src/css/icons.css">
@@ -15,46 +17,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Fancybox -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
     <!-- Map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap" async></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap"
+        async></script>
     <!-- Swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- Slick -->
     <script type="text/javascript" src="src/plugins/slick-1.8.1/slick/slick.min.js" defer></script>
-    <link rel="stylesheet" type="text/css" href="src/plugins/slick-1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="src/plugins/slick-1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="src/plugins/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="src/plugins/slick-1.8.1/slick/slick-theme.css" />
     <!-- Main js and main css -->
     <link rel="stylesheet" href="src/css/main.css">
     <script src="src/js/script.js" defer></script>
 
     <title>Js Practice</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="src/img/favicon-32x32.png">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
-           <div class="logo-holder">
+            <div class="logo-holder">
                 <a href="#" class="logo-link">
                     <img class="logo" src="src/img/viktor/logo.png" alt="logo">
                 </a>
-           </div>
-           <div class="nav-holder js-nav-holder">
+            </div>
+            <div class="nav-holder js-nav-holder">
                 <nav class="header-nav">
                     <ul class="header-nav-list">
                         <li class="header-nav-item">
-                            <a href="#" class="header-nav-link header-nav-link-active">About us</a>
+                            <a href="#scroll-dest" class="header-nav-link header-nav-link-active">About us</a>
                         </li>
                         <li class="header-nav-item">
-                            <a href="#" class="header-nav-link">Projects</a>
+                            <a href="#gallery" class="header-nav-link">Projects</a>
                         </li>
                         <li class="header-nav-item">
-                            <a href="#" class="header-nav-link">News</a>
+                            <a href="#news" class="header-nav-link">News</a>
                         </li>
                         <li class="header-nav-item">
-                            <a href="#" class="header-nav-link">Contact</a>
+                            <a href="#contacts" class="header-nav-link">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -75,23 +82,24 @@
                             <i class="icon-instagram"></i>
                         </a>
                     </li>
-    
+
                 </ul>
-           </div>
-           <button class="nav-opener js-nav-opener"><span></span></button>
-           
+            </div>
+            <button class="nav-opener js-nav-opener"><span></span></button>
+
         </div>
     </header>
     <main class="main">
         <section class="section__hero">
             <div class="swiper">
                 <div class="swiper-wrapper">
-                    
+
                 </div>
                 <div class="swiper-pagination"></div>
-                
+
             </div>
-            <div class="hero__arrow"><a class="hero__arrow-link hero__arrow-link-holder" href="#scroll-dest"><i class="icon-down icon-absolute"></i></a></div>
+            <div class="hero__arrow"><a class="hero__arrow-link hero__arrow-link-holder" href="#scroll-dest"><i
+                        class="icon-down icon-absolute"></i></a></div>
         </section>
 
         <!-- Stanislav -->
@@ -112,7 +120,8 @@
                             by having the right frame of mind. The truth is, our
                             thoughts are very powerful.</p>
                         <button class="btn">MORE DETAILS</button>
-                        <span class="location"><strong class="marker"></strong>New York City, United States - 1776 feet </span>
+                        <span class="location"><strong class="marker"></strong>New York City, United States - 1776 feet
+                        </span>
                     </div>
                 </div>
                 <div class="clon clon2">
@@ -135,7 +144,7 @@
         </section>
 
         <!-- Sergii -->
-        <section class="latest-news">
+        <section class="latest-news" id="news">
             <div class="container">
                 <div class="line"></div>
                 <h2 class="latest-news-title">latest news</h2>
@@ -194,8 +203,8 @@
                             </div>
                         </div>
                     </li>
-                     <!-- next sliders -->
-                     <li class="column-item">
+                    <!-- next sliders -->
+                    <li class="column-item">
                         <div class="img-holder">
                             <img class="col-img" src="src/img/sergii/column_1.jpeg" alt="image description">
                         </div>
@@ -258,7 +267,7 @@
             <div class="container">
                 <div class="hero-title">
                     <hr class="line">
-                    <h2 class="title">gallery</h2>
+                    <h2 class="title" id="gallery">gallery</h2>
                 </div>
                 <div class="gallery-holder">
                     <div class="img-holder main" id="main">
@@ -288,16 +297,16 @@
                 </div>
             </div>
         </section>
-        
-        
+
+
         <!-- Annna -->
         <section class="contacts">
 
-            <div class="contact-form">
+            <div class="contact-form" id="contacts">
                 <form>
 
                     <div class="form-line"></div>
-                    
+
                     <div class="form-title-holder">
                         <h2>GET IN TOUCH</h2>
                     </div>
@@ -305,10 +314,15 @@
                     <div class="form-columns-holder">
 
                         <ul class="form-column left">
-                            <li><address><i class="icon-marker"></i>91 Nolan Extensions Suite 670</address></li>
+                            <li>
+                                <address><i class="icon-marker"></i>91 Nolan Extensions Suite 670</address>
+                            </li>
                             <li><a href="tel:+001 356-868-2454"><i class="icon-phone"></i>+001 356-868-2454</a></li>
-                            <li><a href="mailto:montichello@service.com"><i class="icon-inbox"></i>montichello@service.com</a></li>
-                            <li><p><i class="icon-clock"></i>From 07:05AM to 19:30PM</p></li>
+                            <li><a href="mailto:montichello@service.com"><i
+                                        class="icon-inbox"></i>montichello@service.com</a></li>
+                            <li>
+                                <p><i class="icon-clock"></i>From 07:05AM to 19:30PM</p>
+                            </li>
                         </ul>
 
                         <ul class="form-column right">
@@ -335,19 +349,20 @@
             <div class="upper-line">
 
                 <div class="logo-holder">
-                    <a href="#" class="logo-link"><img src="src/img/anna/logo.svg" alt="Montichello logo" class="logo"></a>
+                    <a href="#" class="logo-link"><img src="src/img/anna/logo.svg" alt="Montichello logo"
+                            class="logo"></a>
                 </div>
-    
+
                 <div class="footer-icon-holder">
-    
+
                     <div class="circle"><a href="#" class="footer-icon-link"><i class="icon-facebook"></i></a></div>
                     <div class="circle"><a href="#" class="footer-icon-link"><i class="icon-twitter"></i></a></div>
                     <div class="circle"><a href="#" class="footer-icon-link"><i class="icon-instagram"></i></a></div>
-                    
+
                 </div>
-    
+
             </div>
-    
+
             <div class="lower-line">
                 <p>Copyrights &copy; 2020 Montichello</p>
             </div>
@@ -357,4 +372,5 @@
     </footer>
     </main>
 </body>
+
 </html>
